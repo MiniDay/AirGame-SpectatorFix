@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "airgame_spectator_fix",
+  "version": "${version}",
+  "name": "AirGame-SpectatorFix",
+  "description": "观察者跟踪修复插件",
+  "authors": [
+    "Hamster3"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/airgame_spectator_fix/icon.jpg",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.airgame.fabric.fix.spectator.client.AirGameSpectatorFixClient"
+    ]
+  },
+  "mixins": [
+    "AirGame-SpectatorFix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8",
+    "fabric": "*",
+    "minecraft": ">=1.12"
+  }
+}
